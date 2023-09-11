@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.google.com/specimen/Poppins?query=poppins ">
+    <link rel="'preconnect" href=" https://fonts.google.com/specimen/Poppins?query=poppins" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: hsl(240, 100%, 50%);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: hsl(0, 100%, 50%);
+            font-size: 1.4rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: blue;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+
+        .left {
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 110px 0;
+
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+            margin: 70px;
+        }
+
+        .rightsection img {
+            width: 60%
+        }
+
+        .purple {
+            color: yellow;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            background: var(---second-bg-colour);
+        }
+
+        .about-img img {
+            width: 35vw;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 4.5rem;
+        }
+
+
+        .about-content h2 {
+            text-align: left;
+            line-height: 1.2;
+        }
+
+        .about-content h3 {
+            font-size: 2.6rem;
+        }
+
+
+        .about-content p {
+            font-size: 1.6rem;
+            margin: 2rem 0 3rem;
+        }
+
+        h2 {
+            text-align: center;
+            color: aliceblue;
+            text-shadow: 4px 4px 4px red;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #333;
+        }
+
+        .inner {
+            padding-top: 1000px;
+        }
+
+        .header {
+            text-align: center;
+            color: #fff;
+            padding: 1rem;
+            position: relative;
+
+        }
+
+        .header:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 4px;
+            width: 100px;
+            background-color: azure;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            grid-gap: 1rem;
+            padding: 1rem 80px;
+            font-size: 1.2rem;
+        }
+
+         
+        .img {
+            width: 90px;
+            height: 90px;
+            position: relative;
+            border-radius: 45px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .5%;
+            margin-bottom: 0.5rem;
+
+        }
+
+        
+        
+
+        .Skills-title {
+            color: #fff;
+            margin-top: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .skill-icon {
+            width: 50px;
+            z-index: 2;
+
+        }
+
+        @media screen and (max-width:990px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 2rem 50px;
+                ;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+
+            color: green;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: red;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        img {
+            border: 5px solid red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <div class="left"> SIMRAN KASHYAP</div>
+            <div class="right"></div>
+            <ul>
+                <li> <a href="/">HOME </a></li>
+                <li> <a href="/">ABOUT ME </a></li>
+                <li> <a href="/">SKILLS </a></li>
+                <li><a href="/"> CONTACT </a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My Name is <span class="purple"> simran Kashyap</span>
+                <div> and I am a passionate </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="C:\Users\akgc3\Downloads\professional pic.jpg" "alt="">
+
+            </div>
+
+        </section>
+        <hr>
+        <section class=" secondsection">
+
+        </section>
+        <section class="about" id=" about">
+            <div class="about-img">
+
+                <div class="about-content">
+
+                    <h2 class="heading">About<span>Me</span></h2>
+
+                    <h3>Fronted Developer</h3>
+                    <p> My Name is simran kashyap . and I m 20 yeasrs of old btech student of It department. I belongs
+                        from delhi. Currently a pre Final student at ADGITM pursing B.Tech in Information Technology.
+                        I am A Full Stack developer and a competative programmer who loves to solve problems.
+                        and I am currently doing virtual Internship as a web developer.
+                    </p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <hr>
+
+        </section>
+        <section id="skills-section">
+            <div class="header skills-header">
+                <h2> My <span>Skills</span></h2>
+            </div>
+            <div class="container">
+
+                <div class="Skills-box">
+                    <div class="Skills-title">
+                        <div class="img">
+                            <img src="https://icones.pro/wp-content/uploads/2021/05/icone-html-violettepng.png"
+                                class="skill-icon">
+                        </div>
+                        <h3> HTML 5 </h3>
+                    </div>
+                    </div>
+                        
+                    <div class="Skills-box">
+                        <div class="Skills-title">
+                            <div class="img">
+                                <img src="https://tse4.mm.bing.net/th?id=OIP.p86-uZmTpATgZr93QmtYjAHaHa&pid=Api&P=0&h=180"
+                                    class="skill-icon">
+                            </div>
+
+                            <h3> CSS 3 </h3>
+                        </div>
+                    </div>
+
+                        <div class="Skills-box">
+                            <div class="Skills-title">
+                                <div class="img">
+                                    <img src="https://tse1.mm.bing.net/th?id=OIP.pUrgPKBH8IIMHletMpK_XQHaEc&pid=Api&P=0&h=180"
+                                        class="skill-icon">
+                                </div>
+                                <h3> java script </h3>
+                            </div>
+                            </div>
+
+                            <div class="Skills-box">
+                                <div class="Skills-title">
+                                    <div class="img">
+                                        <img src="https://tse3.mm.bing.net/th?id=OIP.vdnbwhsak73CHpy113LjvwHaHa&pid=Api&P=0&h=180"
+                                            class="skill-icon">
+                                    </div>
+                                    <h3> nodejs </h3>
+                                </div>
+                            </div>
+
+                               <div class="Skills-box">
+                                <div class="Skills-title">
+                                        <div class="img">
+                                            <img src="https://tse3.mm.bing.net/th?id=OIP.JIyxVs8lvTWe9HBftDBnYgHaIl&pid=Api&P=0&h=180"
+                                                class="skill-icon">
+                                        </div>
+                                        <h3> React </h3>
+                                    </div>
+                                    </div>
+
+
+                                    <div class="Skills-box">
+                                        <div class="Skills-title">
+                                            <div class="img">
+                                                <img src="https://tse3.mm.bing.net/th?id=OIP.-dapj1NFs-emL8g1h6183gAAAA&pid=Api&P=0&h=180"
+                                                    class="skill-icon">
+                                            </div>
+                                            <h3> MySQL</h3>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: [' Full Stack Web Developer', 'Graphic Designer ', 'Web Designer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+    <hr>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <hr>
+    <div class="container">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
